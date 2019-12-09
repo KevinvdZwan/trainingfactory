@@ -1,0 +1,109 @@
+{% extends '/base.html.twig' %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="show-article-container p-3 mt-4">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <img class="img-fluid" src="\images/trainingfactory.png">
+                            <div class="show-article-title-container d-inline-block pl-3 align-middle"><p style="text-align: right; margin-left: 720px; color: red;">Welkom H. Puf<br> - klant - <br> <button type="button" class="btn btn-outline-secondary">uitloggen</button></p>
+                                <span class="show-article-title"><h1 style="color: red; font-weight: bold; font-size: 60px;">Training Centrum</span>
+                                <br>
+                                <br>
+                                <span class="align-left article-details"> Den Haag </span></h1>
+                            </div>
+
+                            <hr>
+                        </div>
+                    </div>
+
+
+                    <nav class="navbar navbar-expand-lg navbar-bg mb-5">
+                        <a style="margin-left: 75px; color: red;" class="navbar-brand space-brand" href="/home">Home</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a style="color: red;" class="nav-link" href="/inschrijvingen">Inschrijven op les</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a style="color: red;" class="nav-link" href="#">Overzicht inschrijvingen</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a style="color: red;" class="nav-link" href="#">Gegevens lid wijzigen</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a style="color: red;" class="nav-link" href="/contact">Contact</a>
+                                </li>
+                            </ul>
+                            </div>
+                    </nav>
+                    <div class="article-border">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img class="img-fluid" src="\images/stootzak.jpg"></div>
+                            <div class="col-sm-4">
+                                <img class="img-fluid" src="\images/kickbox.jpg"></div>
+                                <div class="col-sm-4">
+                                    <img class="img-fluid" src="\images/conormcgregor.jpg"></div>
+                        </div>
+
+
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="article-text">
+                            <h1 style="color: red;">Welkom bij Training Centrum Den Haag</h1>
+
+
+                        </div>
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="article-text">
+                                <p style="width: 950px;">Den Haag Training Center is een sportschool waar onder professionele begeleiding
+                                in een veilige omgeving verschillende soorten martial arts-, indoor bootcamp, personal- en
+                                small group trainingen worden aangeboden. Hier kan je je inschrijven op een les of
+                                uitschrijven op een les.</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                    <br>
+                    <br>
+
+                <footer>
+                    <h5 style="color: red;">Training Centrum Den Haag | 010 519 0532</h5>
+                    <br>
+                    <h6 style="color: white;">Developed by: Kevin</h6>
+                </footer>
+
+                    <style>
+                        .article-border {
+                            border-style: ridge;
+                            padding: 17px;
+                        }
+                        .article-text {
+                            text-align: center;
+                        }
+                        footer {
+                            text-align: center;
+                            background-color: dimgrey;
+                            height: 80px;
+                        }
+                        hr {
+                            border: 1px solid red;
+                        }
+                    </style>
+{% endblock %}
