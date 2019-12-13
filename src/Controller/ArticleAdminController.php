@@ -17,13 +17,22 @@ class ArticleAdminController extends AbstractController
     /**
      * @Route("/article/registratie", name="article_registratie")
      */
-    public function new(EntityManagerInterface $em)
+    public function new(EntityManagerInterface $em, Request $request)
     {
         $form = $this->createForm(ArticleFormType::class);
-
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            dd($form->getData());
+        }
         return $this->render('/article/registration.html.twig', [
             'trainingForm' => $form->createView()
         ]);
+
+    }
+
+    public function edit(Training $training)
+    {
+        dd($training);
     }
 
 }

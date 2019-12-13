@@ -10,8 +10,16 @@ class ArticleFormType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('title')
-            ->add('content')
+
+            ->add('Voornaam')
+            ->add('Tussenvoegsel')
+            ->add('Achternaam')
+            ->add('Geboortedatum')
+            ->add('Gebruikersnaam')
+            ->add('Voer_uw_wachtwoord_in')
+            ->add('Voer_uw_wachtwoord_opnieuw_in')
+
+
         ;
     }
 }
