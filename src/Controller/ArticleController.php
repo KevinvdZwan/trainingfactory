@@ -36,5 +36,11 @@ class ArticleController extends AbstractController
         return $this->render('article/registration.html.twig');
     }
 
-
+    /**
+     * @Route("/addtraining")
+     */
+    public function addTraining()
+    {
+        return $this->render('article/add-training.html.twig');
+    }
 }?>

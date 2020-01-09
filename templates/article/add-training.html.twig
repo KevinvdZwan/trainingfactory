@@ -1,0 +1,57 @@
+{% extends '/base.html.twig' %}
+
+{% block title %}Training Toevoegen{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="show-article-container p-3 mt-4">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img class="img-fluid" src="\images/trainingfactory.png">
+                        <div class="show-article-title-container d-inline-block pl-3 align-middle"><p style="text-align: right; margin-left: 720px; color: red;">Welkom H. Puf<br> - klant - <br> <button type="button" class="btn btn-outline-secondary">uitloggen</button></p>
+                            <span class="show-article-title"><h1 style="color: red; font-weight: bold; font-size: 60px;">Training Centrum</span>
+                            <br>
+                            <br>
+                            <span class="align-left article-details"> Den Haag </span></h1>
+                        </div>
+
+                        <hr>
+                    </div>
+                </div>
+
+
+                <nav class="navbar navbar-expand-lg navbar-bg mb-5">
+                    <a style="margin-left: 75px; color: red;" class="navbar-brand space-brand" href="/home">Home</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a style="color: red;" class="nav-link" href="/inschrijvingen">Inschrijven op les</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="color: red;" class="nav-link" href="/registratie">Lid Worden</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="color: red;" class="nav-link" href="/contact">Contact</a>
+                            </li>
+                        </ul>\
+                    </div>
+                </nav>
+
+                <div class="container">
+                    <form method="post" action="">
+                        <label>Training</label>
+                        <input type="text" class="w50" name="training">
+                        <br>
+
+                        <input type="submit" name="verzenden" value="Opslaan">
+
+                    </form>
+
+
+{% endblock %}

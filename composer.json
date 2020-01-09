@@ -18,12 +18,14 @@
         "symfony/monolog-bundle": "^3.0",
         "symfony/orm-pack": "^1.0",
         "symfony/profiler-pack": "*",
+        "symfony/security-bundle": "4.4.*",
         "symfony/twig-pack": "^1.0",
         "symfony/var-dumper": "4.4.*",
         "symfony/web-server-bundle": "4.4.*",
         "symfony/yaml": "4.4.*"
     },
     "require-dev": {
+        "doctrine/doctrine-fixtures-bundle": "^3.3",
         "symfony/maker-bundle": "^1.14",
         "symfony/profiler-pack": "^1.0"
     },
